@@ -1,0 +1,21 @@
+{
+  "name": "ssrrender",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:server": "rm -rf app && tsc --watch | nodemon --inspect=127.0.0.1:9300 app/app.js",
+    "build:tsc": "tsc node/app.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-router": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "typescript": "^4.1.3"
+  }
+}
